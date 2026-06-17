@@ -3,3 +3,5 @@
 !framework/
 framework/*
 !framework/RTX-Core-Framework.md
+!README.md
+
