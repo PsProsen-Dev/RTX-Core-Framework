@@ -29,7 +29,7 @@ The core inspiration behind building the **RTX Core Framework** is to dismantle 
 
 NVIDIA's CEO Jensen Huang famously declared that *human language—specifically English—is the new programming language of the future*. He argued that AI advancements mean users can build software through plain-English prompts rather than syntax-heavy code.
 
-**RTX strongly believes this is 101% incorrect.**
+**RTX and its creator [@PsProsen-Dev](https://github.com/PsProsen-Dev) strongly believe this is 101% incorrect.**
 
 Limiting the future of software development to "English-only" prompts still leaves millions of brilliant, creative minds behind due to language barriers. English is NOT the only programming language of the future. The true programming language of the future is **your own mother tongue**. 
 
