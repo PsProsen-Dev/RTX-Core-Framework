@@ -4,4 +4,8 @@
 framework/*
 !framework/RTX-Core-Framework.md
 !README.md
+!CONTRIBUTING.md
+!LICENSE
+!SECURITY.md
+
 
