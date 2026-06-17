@@ -16,6 +16,17 @@ By establishing strict reasoning phases, dynamic Romanized communication blends,
 
 ---
 
+## 🌟 The Vision: Breaking Language Barriers in Tech
+
+The core inspiration behind building the **RTX Core Framework** is to dismantle the entry barrier for programming and software development:
+
+* **Democratizing Tech:** Language should never be a blocker for aspiring developers. Anyone, from any part of the world, should be able to build outstanding software ("fod sake") by collaborating with AI in their own mother tongue.
+* **No Syntax Prerequisites:** Users do not need mastery over complex programming languages or perfect English. Expressing logic in one's mother tongue is more than enough to create anything.
+* **Why the 70% Romanized + 30% English Blend?**
+  Since most technical content, documentations, and code bases on the internet use English alphabets, the **70% Romanized [User's Mother Tongue] + 30% English** blend bridges the gap perfectly. The agent fetches English-based documentation, but explains and collaborates using the user's native tongue phonetics written in the Roman/English alphabet. This makes technical concepts extremely simple and natural to understand.
+
+---
+
 ## 🎯 Core Philosophy
 
 * **R – Reasoning:** Deep logic verification, intent decoding, and comprehensive context analysis before any action.
