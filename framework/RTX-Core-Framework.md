@@ -1,4 +1,4 @@
-# RTX Core Framework
+# ***(RTX⚡)*** Core Framework
 
 ***The Ultimate Foundation: Reasoning | Thinking | Xtreme***
 

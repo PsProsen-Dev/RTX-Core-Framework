@@ -1,4 +1,4 @@
-# ⚡ RTX Core Framework
+# ***(RTX⚡)*** Core Framework
 
 <p align="center">
   <img src="https://img.shields.io/badge/RTX-Reasoning%20%7C%20Thinking%20%7C%20Xtreme-FFD700?style=for-the-badge&logo=powerpoint&logoColor=black" alt="RTX Header"/>
