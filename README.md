@@ -120,13 +120,35 @@ Simply attach or share the **file itself** with your agent — no need to open i
 | Tool Type | How to Give the File |
 |-----------|---------------------|
 | **Any AI Chat / IDE** | Drag & drop the `.md` file into the chat, or use the 📎 attach button |
-| **Agentic CLI** | Copy the file to the CLI's global instructions folder (e.g., `AGENTS.md`) then launch the CLI normally |
+| **Agentic CLI** | Open terminal → Launch the CLI → Paste the file path in the chat (see below) |
 | **Code Editor / IDE** | Place the file in your editor's global rules or instructions directory and restart |
 
 > **After attaching — send NO additional prompt.** The agent reads the file and begins the First-Boot Protocol on its own.
 
+#### 💻 For Agentic CLI — How to Paste the File Path
+
+**1.** Open your terminal (PowerShell or Command Prompt).
+
+**2.** Launch your Agentic CLI as you normally would (e.g., type `codex`, `opencode`, `claude`, etc.).
+
+**3.** In the CLI's chat input, paste **only the file path** — nothing else:
+
+```
+C:\Users\YourUsername\RTX-Core-Framework.md
+```
+
+For example:
+```
+C:\Users\John\RTX-Core-Framework.md
+```
+
+**4.** Press Enter. The agent will read the file from the path and begin the First-Boot Protocol automatically.
+
+> 💡 **That's it.** No flags, no commands, no extra prompt. Just the file path. The framework IS the prompt.
 
 ---
+
+
 
 ### 🔄 Method 2 — Copy-Paste the File Content (Alternative)
 
