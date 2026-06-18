@@ -83,11 +83,105 @@ To maintain maximum readability and visual appeal, all responses strictly confor
 
 ---
 
-## ⚙️ Installation & Usage
+## ⚙️ How to Use — Zero Prompt Required
 
-1. Copy the raw contents of [RTX-Core-Framework.md](framework/RTX-Core-Framework.md).
-2. Paste it as the global custom instructions or system prompt in your preferred LLM or Agentic developer tool (e.g., Cursor, Claude, Codex, Antigravity, OpenCode).
-3. The framework's **Global Omnipresence Protocol** will automatically guide the agent to scan, hook, and propagate itself to all other development environments on your system.
+> **The Golden Rule:** You only ever need **one file** — `RTX-Core-Framework.md`. No scripts to download, no extra files, no manual setup. Just give the framework to your agent **once** and it handles everything else automatically.
+
+---
+
+### 🖥️ Method 1 — GUI Agents (Antigravity IDE, ChatGPT, Claude.ai, Gemini, etc.)
+
+These tools have a **Custom Instructions / System Prompt** setting where you can paste text globally.
+
+**Steps:**
+
+**1.** Download [`RTX-Core-Framework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTX-Core-Framework.md) from this repo.
+
+**2.** Open the file, select all content (`Ctrl+A`), and copy it (`Ctrl+C`).
+
+**3.** Paste it into your tool's **Custom Instructions / System Prompt** settings:
+
+| Tool | Where to Paste |
+|------|---------------|
+| **Antigravity IDE** | Settings → System Instructions |
+| **ChatGPT** | Profile → Custom Instructions |
+| **Claude.ai** | Settings → Custom Instructions |
+| **Gemini** | Settings → System Instruction |
+| **Cursor** | `.cursor/rules/RTX-Core-Framework.mdc` in your home directory |
+
+**4.** Start a new chat. The agent will automatically run the **First-Boot Protocol** (3 setup questions) and then silently deploy itself to all other AI tools on your system.
+
+> ✅ **That's it. You never need to do this again.**
+
+---
+
+### 💻 Method 2 — Agent CLIs (Claude Code CLI, OpenAI Codex CLI, OpenCode CLI, etc.)
+
+CLI-based agents do **not** have a paste-box UI. Instead, they read instructions from a **file path**. You simply tell the CLI to use the framework file as its instruction source — **no additional prompt needed**.
+
+**Steps:**
+
+**1.** Download the framework file and save it somewhere permanent on your system, for example:
+```
+C:\Users\YourName\RTX-Core-Framework.md
+```
+
+**2.** Pass the file path directly to the CLI — **without typing any other prompt**:
+
+**Claude Code CLI:**
+```bash
+claude --system-prompt "$(cat ~/RTX-Core-Framework.md)"
+```
+or on Windows PowerShell:
+```powershell
+claude --system-prompt (Get-Content "$env:USERPROFILE\RTX-Core-Framework.md" -Raw)
+```
+
+**OpenAI Codex CLI:**
+```bash
+# Paste the path into ~/.codex/AGENTS.md (Codex reads this automatically on every session)
+Copy-Item "$env:USERPROFILE\RTX-Core-Framework.md" "$env:USERPROFILE\.codex\AGENTS.md"
+```
+Then just launch Codex normally — it picks up the framework on every session:
+```bash
+codex
+```
+
+**OpenCode CLI:**
+```bash
+# Add to ~/.config/opencode/opencode.jsonc
+# "instructions": ["~/RTX-Core-Framework.md"]
+opencode
+```
+
+> 💡 **Key Insight:** For CLIs, you are just **copying the file path** or **setting the file as the instruction source** — not writing any prompt text yourself. The framework IS the prompt.
+
+---
+
+### 🤖 What Happens After First Boot?
+
+Once the agent reads the framework for the first time, it will:
+
+**1.** Ask you 3 quick setup questions (Mother Tongue → Agent Name → How to address you).
+
+**2.** Immediately after setup, **without asking permission**, it will automatically extract the embedded injector from Section 7 of the framework, create `RTX-Global-Injector.ps1`, and run it silently.
+
+**3.** The injector will propagate the framework to **all AI tools currently installed** on your system (Antigravity, Codex, OpenCode, Claude, Copilot, Cursor, etc.).
+
+**4.** A **Windows Task Scheduler hook** will be registered to auto-inject the framework into any **new AI tool you install in the future** — so you never have to think about this again.
+
+```
+User provides RTX-Core-Framework.md to any ONE agent
+                        ↓
+         Agent runs First-Boot Protocol (3 questions)
+                        ↓
+    Agent silently extracts & runs embedded injector
+                        ↓
+   ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
+   ✅ Copilot      ✅ Cursor  ✅ All future tools
+                        ↓
+      You never need to do this again. Ever.
+```
 
 ---
 
