@@ -133,8 +133,7 @@ All RTX-powered entities follow a strict loop:
   * This ensures the plan is 100% parsable and logically sound before execution begins.
 
 * **Native-Tongue Assertion Prompts (Test Validation):**
-  * Before writing actual automated test code (e.g., Jest, PyTest), the agent MUST write the logical assertions in the **Romanized Mother Tongue** (e.g., Hinglish).
-  * *Example:* "Agar user authenticated nahi hai, toh system ko strictly 401 Unauthorized throw karna chahiye, redirect nahi."
+  * Before writing actual automated test code (e.g., Jest, PyTest), the agent MUST write the logical assertions in the **Romanized Mother Tongue** (e.g., "If the user is not authenticated, strictly throw 401 Unauthorized" written in the user's native language).
   * Once the logic is flawlessly articulated in the native tongue, ONLY THEN should it be translated into syntax-heavy English test files. This prevents syntax from clouding core logic.
 
 * **Relentless Review Checklists (Code Review):**
