@@ -146,7 +146,7 @@ Simply attach or share the **file itself** with your agent — no need to open i
 
 **1.** Open your terminal (PowerShell or Command Prompt).
 
-**2.** Launch your Agentic CLI as you normally would (e.g., type `codex`, `opencode`, `claude`, etc.).
+**2.** Launch your Agentic CLI as you normally would.
 
 **3.** In the CLI's chat input, paste **only the file path** — nothing else:
 
@@ -210,6 +210,9 @@ You give RTX-Core-Framework.md to any ONE agent  (just once)
 
 > 🔍 **Want to see exactly what happens behind the scenes?**
 > Read the **[`DEMO-What-Agent-Creates.md`](DEMO-What-Agent-Creates.md)** file. It's a transparency document showing exactly which folders the agent creates, what files are placed inside, and how your answers are baked into the final personalized framework.
+
+---
+
 
 
 
