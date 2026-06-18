@@ -13,9 +13,9 @@ YOU:    Give RTX-Core-Framework.md to any agent
                           ↓
 AGENT:  Reads the framework → asks 3 setup questions
                           ↓
-AGENT:  Detects host OS (Windows, Mac, or Linux)
+AGENT:  Bakes your answers into a FINAL personalized version
                           ↓
-AGENT:  Uses file-system access to inject globally
+AGENT:  Detects OS & uses file-system access to inject globally
                           ↓
         All files below are created automatically
 ```
@@ -26,9 +26,11 @@ AGENT:  Uses file-system access to inject globally
 
 If you open `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or any other injected file, what will you see?
 
-**You will see the EXACT 100% copy of the original `RTX-Core-Framework.md` file.**
+**You will see a FINAL, PERSONALIZED version of the `RTX-Core-Framework.md` file.**
 
-The embedded injector script uses `ReadAllText` to copy the master framework in its entirety and pastes it as the global system instruction for every tool. This ensures that every tool on your system gets the complete DNA, persona, precision rules, and protocol definitions of RTX without losing a single character.
+Instead of blindly copying the raw file, the agent **bakes your setup answers directly into the text** before injecting it. 
+
+For example, if you chose "Hinglish" as your mother tongue and "Ultron" as the name, the injected file will permanently hardcode `Language: 70% Hinglish` and `Identity: ***Ultron (RTX⚡)***`. This brilliant architectural design means **you never have to answer the setup questions again** when you open a new AI tool. The global instruction is already tailored specifically for you!
 
 ---
 
