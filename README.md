@@ -85,7 +85,74 @@ To maintain maximum readability and visual appeal, all responses strictly confor
 
 ## ⚙️ How to Use — Zero Prompt Required
 
-> **The Golden Rule:** You only ever need **one file** — `RTX-Core-Framework.md`. No scripts to download, no extra files, no manual setup. Just give the framework to your agent **once** and it handles everything else automatically.
+> **The Golden Rule:** You only ever need **one file** — `RTX-Core-Framework.md`. No scripts, no extra setup. Give it to your agent **once** — it handles everything else automatically, forever.
+
+**First, download the framework file:**
+👉 [`RTX-Core-Framework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTX-Core-Framework.md) — Right-click → Save As
+
+---
+
+### ✅ Method 1 — Copy-Paste the File (Recommended)
+
+Simply attach or share the **file itself** with your agent — no need to open it or type anything.
+
+| Tool | How to Give the File |
+|------|---------------------|
+| **Antigravity IDE** | Drag & drop the `.md` file into the chat, or attach via 📎 |
+| **ChatGPT** | Click the 📎 paperclip icon → Upload the file |
+| **Claude.ai / Claude Code CLI** | Click the 📎 icon → Upload the file |
+| **Gemini** | Click the 📎 attachment icon → Upload the file |
+| **OpenCode CLI** | Run: `Copy-Item "$env:USERPROFILE\RTX-Core-Framework.md" "$env:USERPROFILE\.config\opencode\AGENTS.md"` then launch `opencode` |
+| **Codex CLI** | Run: `Copy-Item "$env:USERPROFILE\RTX-Core-Framework.md" "$env:USERPROFILE\.codex\AGENTS.md"` then launch `codex` |
+| **Any other agent** | Attach, upload, or pass the file path — the file IS the prompt |
+
+> **After attaching — send NO additional prompt.** The agent reads the file and begins the First-Boot Protocol on its own.
+
+---
+
+### 🔄 Method 2 — Copy-Paste the File Content (Alternative)
+
+If your tool doesn't support file attachments, you can copy the content inside the file.
+
+**1.** Open the downloaded `RTX-Core-Framework.md` file in any text editor.
+
+**2.** Select all → `Ctrl+A`, then Copy → `Ctrl+C`.
+
+**3.** Paste it into your tool's **Custom Instructions / System Prompt / System Instructions** setting and save.
+
+**4.** Start a new chat — **no additional prompt needed.** The First-Boot Protocol will trigger automatically.
+
+> ⚠️ **Note:** Some tools have a character limit on system instructions. If the content gets cut off, use **Method 1 (file attachment)** instead.
+
+---
+
+### 🤖 What Happens After You Give the File?
+
+Once any agent receives the framework, it will **automatically**:
+
+**1.** Ask you 3 quick setup questions *(Mother Tongue → Agent Name → How to address you).*
+
+**2.** Immediately after — **without asking your permission** — extract the embedded injector script from the framework and run it silently in the background.
+
+**3.** Propagate the RTX framework to **all AI tools currently installed** on your system.
+
+**4.** Register a **Windows Task Scheduler hook** — so any new AI tool you install in the future also gets the framework automatically on your next login.
+
+```
+You give RTX-Core-Framework.md to any ONE agent  (just once)
+                        ↓
+         Agent asks 3 setup questions
+                        ↓
+    Agent silently runs the embedded injector
+                        ↓
+  ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
+  ✅ Copilot      ✅ Cursor  ✅ All future tools
+                        ↓
+    You never need to do anything again. Ever.
+```
+
+---
+
 
 ---
 
