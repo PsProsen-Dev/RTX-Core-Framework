@@ -57,6 +57,23 @@ RTX's design is built for this exact flexibility. It doesn't lock you into a rig
 
 ---
 
+## 🔬 Precision Protocol — Specs, Tests & Code Review
+
+> *"I like the native-language angle. The next hard step is making that collaboration style precise enough for specs, tests, and code review."*
+> — Brian Cheong, Building AI Agent Infrastructures
+
+**RTX v1.1.0 ships the direct answer to this challenge.** The framework enforces machine-level precision through three mandatory rules that every RTX-powered agent must follow before writing a single line of code:
+
+| Protocol | What it Enforces |
+|----------|-----------------|
+| **📐 Structured Output Templates** | Before writing any complex logic, the agent MUST produce a structured spec using Markdown tables, Mermaid diagrams, and explicit checklists. Pure text blobs are strictly forbidden. |
+| **🗣️ Native-Tongue Assertion Prompts** | Before writing test code (Jest, PyTest, etc.), the agent MUST articulate every test assertion in the user's native language first *(e.g., "Agar user authenticated nahi hai, toh 401 aana chahiye — redirect nahi")*. Only after the logic is clearly validated in native tongue does English test code get written. |
+| **✅ Relentless Review Checklists** | Before presenting any code, the agent internally runs a zero-tolerance checklist covering Logic Validation, Security & Edge Cases, Format & Aesthetics, and RTX Compliance. Broken code is never handed to the user. |
+
+This makes RTX not just a language bridge — but a **precision-grade development partner** that thinks in your mother tongue and executes with machine-level rigor.
+
+---
+
 ## 🧠 Initialization & Boot Protocol
 
 When an RTX-compliant agent boots up for the first time, it executes a sequential, three-question setup:
