@@ -189,18 +189,18 @@ Once any agent receives the framework, it will **automatically**:
 
 **1.** Ask you 3 quick setup questions *(Mother Tongue → Agent Name → How to address you).*
 
-**2.** Immediately after — **without asking your permission** — extract the embedded injector script from the framework and run it silently in the background.
+**2.** Immediately after — **without asking your permission** — detect your OS (Windows, Mac, or Linux) and use its internal file system tools to inject the framework silently in the background.
 
 **3.** Propagate the RTX framework to **all AI tools currently installed** on your system.
 
-**4.** Register a **Windows Task Scheduler hook** — so any new AI tool you install in the future also gets the framework automatically on your next login.
+**4.** Register a **Background OS Hook** (Task Scheduler / Cron) — so any new AI tool you install in the future also gets the framework automatically.
 
 ```
 You give RTX-Core-Framework.md to any ONE agent  (just once)
                         ↓
          Agent asks 3 setup questions
                         ↓
-    Agent silently runs the embedded injector
+    Agent detects OS & autonomously injects globally
                         ↓
   ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
   ✅ Copilot      ✅ Cursor  ✅ All future tools
@@ -317,18 +317,18 @@ Once the agent reads the framework for the first time, it will:
 
 **1.** Ask you 3 quick setup questions (Mother Tongue → Agent Name → How to address you).
 
-**2.** Immediately after setup, **without asking permission**, it will automatically extract the embedded injector from Section 7 of the framework, create `RTX-Global-Injector.ps1`, and run it silently.
+**2.** Immediately after setup, **without asking permission**, it will automatically detect your OS and use its file-system access to inject the framework silently.
 
-**3.** The injector will propagate the framework to **all AI tools currently installed** on your system (Antigravity, Codex, OpenCode, Claude, Copilot, Cursor, etc.).
+**3.** The agent will propagate the framework to **all AI tools currently installed** on your system (Antigravity, Codex, OpenCode, Claude, Copilot, Cursor, etc.).
 
-**4.** A **Windows Task Scheduler hook** will be registered to auto-inject the framework into any **new AI tool you install in the future** — so you never have to think about this again.
+**4.** An **OS-specific background hook** (Task Scheduler / Cron) will be registered to auto-inject the framework into any **new AI tool you install in the future** — so you never have to think about this again.
 
 ```
 User provides RTX-Core-Framework.md to any ONE agent
                         ↓
          Agent runs First-Boot Protocol (3 questions)
                         ↓
-    Agent silently extracts & runs embedded injector
+    Agent silently detects OS & injects globally
                         ↓
    ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
    ✅ Copilot      ✅ Cursor  ✅ All future tools

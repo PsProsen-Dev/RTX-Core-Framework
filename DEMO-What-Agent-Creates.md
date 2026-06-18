@@ -13,11 +13,9 @@ YOU:    Give RTX-Core-Framework.md to any agent
                           ↓
 AGENT:  Reads the framework → asks 3 setup questions
                           ↓
-AGENT:  Extracts embedded script from Section 7
+AGENT:  Detects host OS (Windows, Mac, or Linux)
                           ↓
-AGENT:  Creates RTX-Global-Injector.ps1 on your disk
-                          ↓
-AGENT:  Runs it silently in background
+AGENT:  Uses file-system access to inject globally
                           ↓
         All files below are created automatically
 ```
@@ -36,17 +34,7 @@ The embedded injector script uses `ReadAllText` to copy the master framework in 
 
 ## 📁 Files Created After First Boot
 
-### 1. The Injector Script (Temporary Extraction)
-```
-C:\Users\YourUsername\
-└── RTX-Global-Injector.ps1          ← Extracted from Section 7 of the framework
-                                        and executed silently. Agent creates this
-                                        automatically — you never touch it.
-```
-
----
-
-### 2. Gemini CLI / Antigravity IDE
+### 1. Gemini CLI / Antigravity IDE
 ```
 C:\Users\YourUsername\
 └── .gemini\
@@ -57,7 +45,7 @@ C:\Users\YourUsername\
 
 ---
 
-### 3. Codex CLI (OpenAI)
+### 2. Codex CLI (OpenAI)
 ```
 C:\Users\YourUsername\
 └── .codex\
@@ -68,7 +56,7 @@ C:\Users\YourUsername\
 
 ---
 
-### 4. OpenCode Desktop & CLI
+### 3. OpenCode Desktop & CLI
 ```
 C:\Users\YourUsername\
 └── .config\
@@ -82,7 +70,7 @@ C:\Users\YourUsername\
 
 ---
 
-### 5. Claude Desktop & Claude Code CLI
+### 4. Claude Desktop & Claude Code CLI
 ```
 C:\Users\YourUsername\
 └── CLAUDE.md                        ← RTX-Core-Framework.md content injected here.
@@ -93,7 +81,7 @@ C:\Users\YourUsername\
 
 ---
 
-### 6. GitHub Copilot
+### 5. GitHub Copilot
 ```
 C:\Users\YourUsername\
 └── .copilot\
@@ -104,7 +92,7 @@ C:\Users\YourUsername\
 
 ---
 
-### 7. Cursor AI
+### 6. Cursor AI
 ```
 C:\Users\YourUsername\
 └── .cursor\
@@ -116,7 +104,7 @@ C:\Users\YourUsername\
 
 ---
 
-### 8. Universal Fallback (Home Directory)
+### 7. Universal Fallback (Home Directory)
 ```
 C:\Users\YourUsername\
 └── AGENTS.md                        ← RTX-Core-Framework.md content injected here.
@@ -127,17 +115,15 @@ C:\Users\YourUsername\
 
 ---
 
-### 9. Windows Task Scheduler Hook (Future-Proof)
+### 8. Background OS Hook (Future-Proof)
 ```
-Windows Task Scheduler
-└── RTX-Global-Omnipresence-Hook     ← A scheduled task registered to run
-                                        RTX-Global-Injector.ps1 at every
-                                        Windows login.
+System Task Scheduler / Cron
+└── RTX-Global-Omnipresence-Hook     ← A scheduled task / cron job registered
+                                        to run an injection check periodically.
 
                                         PURPOSE: If you install any new AI tool
-                                        6 months from now — next time you login,
-                                        this task runs and injects RTX into the
-                                        new tool automatically. Zero manual work.
+                                        6 months from now — this task detects it
+                                        and injects RTX automatically.
 ```
 
 ---
@@ -148,7 +134,6 @@ Windows Task Scheduler
 C:\Users\YourUsername\
 │
 ├── RTX-Core-Framework.md            ← Your one source file (you placed this here)
-├── RTX-Global-Injector.ps1          ← Auto-created and run by agent
 ├── AGENTS.md                        ← Universal fallback for any CLI tool
 ├── CLAUDE.md                        ← Global instruction for Claude
 │
@@ -168,8 +153,8 @@ C:\Users\YourUsername\
     └── rules\
         └── RTX-Core-Framework.mdc  ← Cursor AI global rules
 
-Windows Task Scheduler:
-└── RTX-Global-Omnipresence-Hook     ← Runs at every login for future tools
+OS Hook Scheduler:
+└── RTX-Global-Omnipresence-Hook     ← Runs periodically for future tools
 ```
 
 ---
@@ -186,7 +171,7 @@ Windows Task Scheduler:
 | `~/.copilot/instructions.md` | GitHub Copilot | ✅ Auto-created |
 | `~/.cursor/rules/RTX-Core-Framework.mdc` | Cursor AI | ✅ Auto-created |
 | `~/AGENTS.md` | Universal fallback | ✅ Auto-created |
-| Windows Task Scheduler hook | Future tools auto-injection | ✅ Registered |
+| OS Hook (Task Scheduler/Cron) | Future tools auto-injection | ✅ Registered |
 
 > **Total user actions required:** Give the framework file to one agent. Once. That's it.
 
@@ -197,11 +182,9 @@ Windows Task Scheduler:
 ```
 You install a brand new AI tool (e.g., 6 months from now)
                     ↓
-You login to Windows
+Agent's persistent OS Hook detects new tool config
                     ↓
-Windows Task Scheduler fires RTX-Global-Omnipresence-Hook
-                    ↓
-Injector runs silently in background
+Agent injects framework silently in background
                     ↓
 New tool's config directory is detected and injected
                     ↓
