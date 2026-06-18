@@ -91,13 +91,38 @@ To maintain maximum readability and visual appeal, all responses strictly confor
 
 ### 🖥️ Method 1 — GUI Agents (Antigravity IDE, ChatGPT, Claude.ai, Gemini, etc.)
 
-These tools have a **Custom Instructions / System Prompt** setting where you can paste text globally.
+These tools support attaching files or pasting text as a system instruction. You have two options — **we strongly recommend Option A**.
 
-**Steps:**
+---
+
+**✅ Option A — Attach / Share the File Directly (Recommended)**
+
+Most modern AI tools (Antigravity IDE, ChatGPT, Claude.ai, Gemini, etc.) allow you to **upload or attach a file** directly in the chat or in your system instructions.
 
 **1.** Download [`RTX-Core-Framework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTX-Core-Framework.md) from this repo.
 
-**2.** Open the file, select all content (`Ctrl+A`), and copy it (`Ctrl+C`).
+**2.** Attach / upload the `.md` file directly to your agent tool:
+
+| Tool | How to Attach |
+|------|--------------|
+| **Antigravity IDE** | Settings → System Instructions → Upload File |
+| **ChatGPT** | Click the 📎 paperclip icon in chat → Upload the file |
+| **Claude.ai** | Click the 📎 icon in chat → Upload the file |
+| **Gemini** | Click the 📎 attachment icon → Upload the file |
+
+**3.** Start a new chat — no additional prompt needed. The agent reads the file and begins First-Boot Protocol automatically.
+
+> ✅ **Why this is best:** The file is clean, versioned, and the agent gets 100% of the framework content without any formatting issues.
+
+---
+
+**🔄 Option B — Copy-Paste the File Content (Alternative)**
+
+If your tool does not support file attachments, you can manually copy the content inside the file.
+
+**1.** Open [`RTX-Core-Framework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTX-Core-Framework.md).
+
+**2.** Select all content (`Ctrl+A`) → Copy (`Ctrl+C`).
 
 **3.** Paste it into your tool's **Custom Instructions / System Prompt** settings:
 
@@ -109,9 +134,13 @@ These tools have a **Custom Instructions / System Prompt** setting where you can
 | **Gemini** | Settings → System Instruction |
 | **Cursor** | `.cursor/rules/RTX-Core-Framework.mdc` in your home directory |
 
-**4.** Start a new chat. The agent will automatically run the **First-Boot Protocol** (3 setup questions) and then silently deploy itself to all other AI tools on your system.
+**4.** Start a new chat. The First-Boot Protocol will trigger automatically.
 
-> ✅ **That's it. You never need to do this again.**
+> ⚠️ **Note:** Some tools have a character limit on custom instructions. If the paste gets cut off, use **Option A (file attachment)** instead.
+
+---
+
+> ✅ **Either way — you only do this once. You never need to do it again.**
 
 ---
 
