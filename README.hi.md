@@ -103,6 +103,7 @@ Manual setup ko aasan banane ke liye, in templates ko directly copy-paste ya lin
 * **[Cursor IDE Template](templates/.cursorrules)**: Apne project root mein `.cursorrules` naam se save karein.
 * **[Cline / Claude Dev Template](templates/clinerules)**: Apne project root mein `.clinerules` naam se save karein.
 * **[GitHub Copilot Template](templates/copilot-instructions.md)**: Apne project root mein `.github/copilot-instructions.md` naam se save karein.
+* **[Claude Code CLI Template](templates/CLAUDE.md)**: Apne project root mein `CLAUDE.md` naam se save karein.
 
 ---
 

@@ -105,6 +105,7 @@ For easier manual setup, copy-paste or link these configuration templates direct
 * **[Cursor IDE Template](templates/.cursorrules)**: Place as `.cursorrules` in your project root.
 * **[Cline / Claude Dev Template](templates/clinerules)**: Place as `.clinerules` in your project root.
 * **[GitHub Copilot Template](templates/copilot-instructions.md)**: Place as `.github/copilot-instructions.md` in your project root.
+* **[Claude Code CLI Template](templates/CLAUDE.md)**: Place as `CLAUDE.md` in your project root.
 
 ---
 
