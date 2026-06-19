@@ -40,12 +40,30 @@ Programming aur software development ka entry barrier khatam karna — **yahi RT
 
 ## 🎯 Kaise Use Karein — Zero Prompt Required
 
-> **Golden Rule:** Sirf **ek file** chahiye — `RTXCoreFramework.md`. Isko apne agent ko ek baar do — baki sab agent khud handle kar leta hai, hamesha ke liye.
+> **Golden Rule:** Sirf **ek file** chahiye — `RTXCoreFramework.md`. Aap ise manually setup kar sakte hain, ya phir single command script run karke pure system mein automatic config synchronize kar sakte hain!
 
-**Step 1 — File download karo:**
+### ⚡ Method 1 — One-Command Automated Setup (Recommended)
+
+Niche diya gaya script run karein, jo automatically latest config files ko download aur configure kar dega (Cursor, Claude Code, GitHub Copilot aur Gemini ke liye):
+
+**Windows par (PowerShell):**
+```powershell
+powershell -c "irm https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/scripts/install.ps1 | iex"
+```
+
+**Mac / Linux par (Bash):**
+```bash
+curl -fsSL https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/scripts/install.sh | bash
+```
+
+---
+
+### 📂 Method 2 — File Attach Karein (Manual)
+
+Agar aap manual installation prefer karte hain, toh pehle master framework file download karein:
 👉 [`RTXCoreFramework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTXCoreFramework.md) — Right-click → Save As
 
-**Step 2 — Agent ko file do:**
+Phir file ko apne agent ko attach/give kijiye:
 
 | Tool Type | Kaise Do |
 |-----------|---------|
@@ -119,6 +137,16 @@ Yeh framework commercial aur open-weights models ke sath benchmark kiya gaya hai
 | **Tier 2 (Very Good)** | Gemini 1.5 Pro / 2.5 Pro | `8 / 10` | Huge context windows. Multilingual / bilingual inputs ko perfectly process karta hai. |
 | **Tier 3 (Fair)** | Llama 3.1 70B / Qwen 2.5 Coder 32B | `7.5 / 10` | Solid coding capacity. Kabhi-kabhi precision assertion translate karte waqt confuse hota hai. |
 | **Tier 3 (Fair)** | Smaller Local Models (Llama 3 8B) | `6 / 10` | Basic coding ke liye theek hai, par rules aur behavior compliance strong nahi hai. |
+
+## ⚠️ "Romanized Tax" Se Bachna (Tokenization Efficiency)
+
+LLMs (jaise Claude, GPT, Gemini) internally English language ke BPE tokenizers par optimize hote hain. Is wajah se Romanized scripts (jaise Hinglish ya Spanglish) English words ke mukable **3x se 5x zyada tokens** consume karti hain (jise "Romanized Tax" kaha jata hai).
+
+Token consumption kam karne aur context memory badhane ke liye in guidelines ko follow karein:
+
+1. **Technical & Code Exemption:** Code scripts, terminal errors, logs, aur databases schemas ko hamesha **pure English** mein hi paste karein.
+2. **Short & Crisp Conversation:** Apni conversation ko direct aur short rakhein. Jaise long-winded paragraphs ke bajaye direct likhein: `"API route fail ho raha hai, validation schema verify karo."`
+3. **No Hinglish in Code Blocks:** Kabhi bhi generated function body, names ya comment blocks mein Hinglish rules force na karein. Code hamesha 100% standard English syntax mein hi hona chahiye.
 
 ---
 

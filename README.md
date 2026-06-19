@@ -124,6 +124,18 @@ The framework has been benchmarked across various commercial and open-weights mo
 
 ---
 
+## ⚠️ Mitigating the "Romanized Tax" (Tokenization Efficiency)
+
+Large Language Models utilize Byte-Pair Encoding (BPE) tokenizers (like Tiktoken) which are heavily optimized for English. Because of this, Romanized native phonetics (like Hinglish or Spanglish) can consume **3x to 5x more tokens** than standard English equivalents, which can lead to context window depletion.
+
+To optimize your prompts and avoid the "Romanized Tax", follow these guidelines:
+
+1. **Functional English Exemption:** Always paste stack traces, terminal errors, code structures, and database schemas in pure, original English.
+2. **Concise Conversation:** Keep conversational instructions and explanations brief. Prefer direct statements like `"DB connection fail ho gaya, reconnect logic debug karo"` over long conversational padding.
+3. **English for Code Blocks:** Ensure that code blocks (fenced scripts, functions) and configs remain completely in English to save context tokens.
+
+---
+
 ## 🧠 Initialization & Boot Protocol
 
 When an RTX-compliant agent boots up for the first time, it executes a sequential, three-question setup:
@@ -173,19 +185,30 @@ To maintain maximum readability and visual appeal, all responses strictly confor
 
 ## ⚙️ How to Use — Zero Prompt Required
 
-> **The Golden Rule:** You only ever need **one file** — `RTXCoreFramework.md`. No scripts, no extra setup. Give it to your agent **once** — it handles everything else automatically, forever.
+> **The Golden Rule:** You only ever need **one file** — `RTXCoreFramework.md`. You can configure it manually by giving it to your agent, or you can run our **one-command installer** to configure your workspace globally in seconds!
 
-**Step 1 — Download the framework file:**
-👉 [`RTXCoreFramework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTXCoreFramework.md) — Right-click → Save As
+### ⚡ Method 1 — One-Command Automated Setup (Recommended)
 
-**Step 2 — Give the file to your agent using one of the methods below:**
+Run the script below to automatically download the latest framework configuration and install it globally across Cursor, Claude Code CLI, GitHub Copilot, and Gemini:
+
+**On Windows (PowerShell):**
+```powershell
+powershell -c "irm https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/scripts/install.ps1 | iex"
+```
+
+**On Mac / Linux (Bash):**
+```bash
+curl -fsSL https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/scripts/install.sh | bash
+```
 
 ---
 
+### 📂 Method 2 — Attach the File (Manual)
 
-### ✅ Method 1 — Copy-Paste the File (Recommended)
+If you prefer manual installation, download the raw framework file:
+👉 [`RTXCoreFramework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTXCoreFramework.md) — Right-click → Save As
 
-Simply attach or share the **file itself** with your agent — no need to open it or type anything.
+Then, simply attach or share the **file itself** with your agent — no need to open it or type anything.
 
 | Tool Type | How to Give the File |
 |-----------|---------------------|
@@ -220,7 +243,7 @@ C:\Users\John\Downloads\RTXCoreFramework.md
 
 
 
-### 🔄 Method 2 — Copy-Paste the File Content (Alternative)
+### 🔄 Method 3 — Copy-Paste the File Content (Alternative)
 
 If your tool doesn't support file attachments, you can copy the content inside the file.
 
@@ -232,7 +255,7 @@ If your tool doesn't support file attachments, you can copy the content inside t
 
 **4.** Start a new chat — **no additional prompt needed.** The First-Boot Protocol will trigger automatically.
 
-> ⚠️ **Note:** Some tools have a character limit on system instructions. If the content gets cut off, use **Method 1 (file attachment)** instead.
+> ⚠️ **Note:** Some tools have a character limit on system instructions. If the content gets cut off, use **Method 2 (file attachment)** instead.
 
 ---
 

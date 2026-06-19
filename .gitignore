@@ -30,3 +30,5 @@ evals/*
 !.github/workflows/*.yml
 !templates/
 !templates/*
+!scripts/
+!scripts/*

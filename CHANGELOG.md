@@ -5,6 +5,12 @@ All notable changes to the RTX-Core-Framework will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-06-19
+### Added
+- **Model-Specific Behavioral Shims:** Added Section 7 to the core framework to calibrate model alignment across Claude (strict XML tagging), Gemini (lazy generation avoidance), and GPT-4o (preventing auto-translation back to English).
+- **Automated Installer Scripts:** Created dynamic scripts (`scripts/install.ps1` for Windows, `scripts/install.sh` for Mac/Linux) to enable one-command installation and synchronize the framework globally across IDEs and agents.
+- **BPE Tokenization Efficiency Guide:** Documented strategies in the README to mitigate the "Romanized Tax" tokenizer penalty and optimize prompt context window usage.
+
 ## [1.3.3] - 2026-06-19
 ### Added
 - **Token Deflation Safety Valve:** Added an anti-gridlock rule in Section 3 of the framework to exempt fenced code blocks, system/terminal logs, stack traces, compiler errors, and raw JSON/YAML payloads from translation. This prevents syntax corruption and reduces token overhead.
