@@ -1,8 +1,8 @@
-﻿# 🤖 RTX⚡ — What the Agent Creates Behind the Scenes
+# 🤖 RTX⚡ — What the Agent Creates Behind the Scenes
 
 > This document shows exactly what happens in the background after you give
 > `RTXCoreFramework.md` to any agent for the first time.
-> You do nothing. The agent handles all of this silently and automatically.
+> The agent compiles your custom rules and asks for permission before copying them.
 
 ---
 
@@ -15,9 +15,9 @@ AGENT:  Reads the framework → asks 3 setup questions
                           ↓
 AGENT:  Bakes your answers into a FINAL personalized version
                           ↓
-AGENT:  Detects OS & uses file-system access to inject globally
+AGENT:  Asks: "Do you want me to propagate this globally? [Yes/No]"
                           ↓
-        All files below are created automatically
+        If Approved (Yes), target files are created
 ```
 
 ---
@@ -34,7 +34,7 @@ For example, if you chose "Hinglish" as your mother tongue and "Ultron" as the n
 
 ---
 
-## 📁 Files Created After First Boot
+## 📁 Files Created After First Boot (Upon User Approval)
 
 ### 1. Gemini CLI / Antigravity IDE
 ```
@@ -45,8 +45,6 @@ C:\Users\YourUsername\
                                         reads this file globally on startup.
 ```
 
----
-
 ### 2. Codex CLI (OpenAI)
 ```
 C:\Users\YourUsername\
@@ -55,8 +53,6 @@ C:\Users\YourUsername\
                                         Codex CLI reads AGENTS.md automatically
                                         on every session launch.
 ```
-
----
 
 ### 3. OpenCode Desktop & CLI
 ```
@@ -70,8 +66,6 @@ C:\Users\YourUsername\
                                         for OpenCode CLI mode.
 ```
 
----
-
 ### 4. Claude Desktop & Claude Code CLI
 ```
 C:\Users\YourUsername\
@@ -80,8 +74,6 @@ C:\Users\YourUsername\
                                         automatically read CLAUDE.md from the home
                                         directory as the global system instruction.
 ```
-
----
 
 ### 5. GitHub Copilot
 ```
@@ -92,8 +84,6 @@ C:\Users\YourUsername\
                                         across all workspaces.
 ```
 
----
-
 ### 6. Cursor AI
 ```
 C:\Users\YourUsername\
@@ -103,8 +93,6 @@ C:\Users\YourUsername\
                                         Cursor reads .mdc rule files from this
                                         directory globally across all projects.
 ```
-
----
 
 ### 7. Universal Fallback (Home Directory)
 ```
@@ -117,20 +105,7 @@ C:\Users\YourUsername\
 
 ---
 
-### 8. Background OS Hook (Future-Proof)
-```
-System Task Scheduler / Cron
-└── RTX-Global-Omnipresence-Hook     ← A scheduled task / cron job registered
-                                        to run an injection check periodically.
-
-                                        PURPOSE: If you install any new AI tool
-                                        6 months from now — this task detects it
-                                        and injects RTX automatically.
-```
-
----
-
-## 🗂️ Full Directory Tree After Injection
+## 🗂️ Full Directory Tree After Injected Copying
 
 ```
 C:\Users\YourUsername\
@@ -154,45 +129,31 @@ C:\Users\YourUsername\
 └── .cursor\
     └── rules\
         └── RTXCoreFramework.mdc  ← Cursor AI global rules
-
-OS Hook Scheduler:
-└── RTX-Global-Omnipresence-Hook     ← Runs periodically for future tools
 ```
 
 ---
 
-## ✅ RTX Injection Checklist
+| Target File | Purpose | Status After Approval |
+|-------------|---------|-----------------------|
+| `~/.gemini/GEMINI.md` | Antigravity / Gemini CLI | ✅ Created |
+| `~/.codex/AGENTS.md` | Codex CLI | ✅ Created |
+| `~/.config/opencode/opencode.jsonc` | OpenCode config | ✅ Patched |
+| `~/.config/opencode/RTXCoreFramework.md` | OpenCode framework copy | ✅ Created |
+| `~/CLAUDE.md` | Claude Desktop & Claude Code CLI | ✅ Created |
+| `~/.copilot/instructions.md` | GitHub Copilot | ✅ Created |
+| `~/.cursor/rules/RTXCoreFramework.mdc` | Cursor AI | ✅ Created |
+| `~/AGENTS.md` | Universal fallback | ✅ Created |
 
-| File / Target | Purpose | Status After First Boot |
-|---------------|---------|------------------------|
-| `~/.gemini/GEMINI.md` | Antigravity / Gemini CLI | ✅ Auto-created |
-| `~/.codex/AGENTS.md` | Codex CLI | ✅ Auto-created |
-| `~/.config/opencode/opencode.jsonc` | OpenCode config | ✅ Auto-patched |
-| `~/.config/opencode/RTXCoreFramework.md` | OpenCode framework copy | ✅ Auto-created |
-| `~/CLAUDE.md` | Claude Desktop & Claude Code CLI | ✅ Auto-created |
-| `~/.copilot/instructions.md` | GitHub Copilot | ✅ Auto-created |
-| `~/.cursor/rules/RTXCoreFramework.mdc` | Cursor AI | ✅ Auto-created |
-| `~/AGENTS.md` | Universal fallback | ✅ Auto-created |
-| OS Hook (Task Scheduler/Cron) | Future tools auto-injection | ✅ Registered |
-
-> **Total user actions required:** Give the framework file to one agent. Once. That's it.
+> **Total user actions required:** Give the framework file to one agent. Approve the file propagation check. Done.
 
 ---
 
-## 🔄 What Happens When You Install a New Tool Later?
+## 🔄 What Happens If You Install a New Tool Later?
 
-```
-You install a brand new AI tool (e.g., 6 months from now)
-                    ↓
-Agent's persistent OS Hook detects new tool config
-                    ↓
-Agent injects framework silently in background
-                    ↓
-New tool's config directory is detected and injected
-                    ↓
-New tool boots with RTX already active — you did nothing
-```
+If you install a new AI agentic CLI or IDE in the future, you do not need to re-run any initialization scripts. Since your personalized configurations are stored in your user profile home directory (`~/RTXCoreFramework.md`), you can easily:
+1. Reference that file directly in the settings of your new AI client.
+2. Give the `~/RTXCoreFramework.md` file to the new agent in its first chat. It will instantly adopt your preferences (language, name, user addressal) without asking the initial setup questions again!
 
 ---
 
-*Part of the **RTX⚡ Core Framework** by [Prosenjit Paul](https://github.com/PsProsen-Dev)*
+*Part of the **(RTX⚡) Core Framework** by [Prosenjit Paul](https://github.com/PsProsen-Dev)*

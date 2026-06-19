@@ -211,32 +211,41 @@ If your tool doesn't support file attachments, you can copy the content inside t
 
 ### 🤖 What Happens After You Give the File?
 
-Once any agent receives the framework, it will **automatically**:
+Once any agent receives the framework, it will:
 
 **1.** Ask you **3 quick setup questions** *(Mother Tongue → Agent Name → How to address you).*
 
-**2.** Immediately after — **without asking your permission** — detect your OS (Windows, Mac, or Linux) and use its internal file system tools to inject the framework across your system.
+**2.** Immediately compile a customized master copy of the framework based on your answers.
 
-**3.** Propagate the **(RTX⚡)** framework to **all AI tools currently installed** on your system.
+**3.** Ask for your **explicit permission** to save the configuration and copy it to your local config folders (e.g. Cursor, Claude, Copilot, Gemini).
 
-**4.** Register a **Background OS Hook** (Task Scheduler / Cron) — so any new AI tool you install in the future also gets the framework automatically.
+**4.** Synchronize all confirmed tools so you never have to re-enter your settings.
 
 ```
-You give RTXCoreFramework.md to any ONE agent  (just once)
+You give RTXCoreFramework.md to any ONE agent (just once)
                         ↓
          Agent asks 3 setup questions
                         ↓
-    Agent detects OS & autonomously injects globally
+     Agent asks for permission to copy config
                         ↓
    ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
-   ✅ Copilot      ✅ Cursor  ✅ All future tools
+   ✅ Copilot      ✅ Cursor  ✅ All confirmed tools
                         ↓
-    You never need to do anything again. Ever.
+      Ready to build in your native language!
 ```
 
-> 🔍 **Want to see exactly what the personalized output looks like?**
-> Check the **[`examples/`](examples/)** folder — it has real compiled personas so you know exactly what to expect.
-
+> 👥 **Persona Examples:**
+> Check out these real-world compiled templates in the **[`examples/`](examples/)** folder:
+> * 🐍 **[Python-Dev-Ananya](examples/Python-Dev-Ananya.md):** 70% Hinglish blend for Python/Pytest development.
+> * 🎨 **[Web-Dev-Vishal](examples/Web-Dev-Vishal.md):** 70% Hinglish blend for Frontend React & CSS styling.
+> * 📊 **[Data-Analyst-Dhruv](examples/Data-Analyst-Dhruv.md):** 70% Hinglish blend for SQL and data cleaning.
+> * 🇪🇸 **[Spanish-Dev-Carlos](examples/Spanish-Dev-Carlos.md):** 70% Spanglish blend for CSS/JS frontend layout.
+> * 🇰🇷 **[Korean-Dev-Jiwoo](examples/Korean-Dev-Jiwoo.md):** 70% Korglish blend for Systems and Backend API development.
+> * 🇸🇦 **[Arabic-Dev-Farhan](examples/Arabic-Dev-Farhan.md):** 70% Franco-Arabic blend for Cloud ETL and Spark transformations.
+>
+> 🧪 **Evaluation & Compliance Benchmarks:**
+> Want to test if your model conforms to the RTX protocol rules? Read the **[`evals/EVALUATION-SUITE.md`](evals/EVALUATION-SUITE.md)** containing validation checks and benchmark scorecards.
+>
 > 📖 **Want a full breakdown of what files get created?**
 > Read **[`DEMO-What-Agent-Creates.md`](DEMO-What-Agent-Creates.md)** — a complete transparency document.
 
@@ -248,7 +257,7 @@ You give RTXCoreFramework.md to any ONE agent  (just once)
 |---|---|---|---|
 | Native Language Support | ✅ 70% Romanized blend | ❌ 100% English only | ✅ 100% Native script |
 | Works with any LLM | ✅ Universal | ✅ Per-tool | ⚠️ Depends on model |
-| Cross-Platform Sync | ✅ Auto-propagates | ❌ Manual per-tool | ❌ Local only |
+| Cross-Platform Sync | ✅ Opt-in propagation | ❌ Manual per-tool | ❌ Local only |
 | Persona Injection | ✅ Dynamic web fetch | ❌ Static | ❌ Not supported |
 | Precision Protocol (Specs/Tests) | ✅ Built-in | ❌ Manual | ❌ Not supported |
 | One-time Setup | ✅ Give once, works everywhere | ❌ Repeat per tool | ⚠️ Per model setup |
