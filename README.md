@@ -328,7 +328,6 @@ Also remove any Task Scheduler (Windows) or cron (Mac/Linux) entries named `RTXF
 For more in-depth setup guides, community modifications, and integration scripts:
 
 * **Official Wiki:** [(RTX⚡) Core Framework Wiki](https://github.com/PsProsen-Dev/RTXCoreFramework/wiki)
-* **Wiki Git Repository:** `https://github.com/PsProsen-Dev/RTXCoreFramework.wiki.git`
 
 ---
 
