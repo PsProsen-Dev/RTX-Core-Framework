@@ -7,27 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.3.0] - 2026-06-19
 ### Added
-- **Security & Integrity Notice:** Added a warning in the framework to address prompt injection vulnerabilities, instructing users to only use the official repo.
-- **Input Validation:** Added a rule for agents to validate user input (name) to prevent path traversal and script injection.
-- **Visual Architecture Diagram:** Added a Mermaid flowchart to the README to visualize the First-Boot and global propagation process.
-- **Comparison Table:** Added a feature comparison table between RTX, Custom Instructions, and LocalLLMs.
-- **Troubleshooting FAQ:** Added a comprehensive FAQ for issues like language drift, Cursor/Codex integration, and uninstallation.
-- **Uninstall Guide:** Explicit OS paths provided to remove the framework globally.
-- **Multilingual Support:** Added `README.hi.md` (Hindi) to prove the "mother tongue-first" concept natively.
-- **GitHub Templates:** Added structured `.github` templates for bug reports, feature requests, and pull requests with an RTX compliance checklist.
-- **Persona Examples:** Added 3 new pre-compiled examples: Python Developer (Ananya), Web Developer (Vishal), and Data Analyst (Dhruv).
+- **Security & Integrity Notice:** Added prompt injection warnings and input validation rules to the core framework to prevent malicious forks.
+- **Multilingual Support:** Created `README.hi.md` to demonstrate the "mother tongue-first" philosophy directly in the documentation.
+- **Visual Architecture:** Added a Mermaid flowchart to the README to clearly explain the setup and propagation workflow.
+- **Comprehensive FAQ & Uninstall Guide:** Documented troubleshooting steps and clear uninstall paths for Windows, Mac, and Linux.
+- **GitHub Templates:** Added structured Issue templates (Bug Report, Feature Request) and a Pull Request template with an RTX compliance checklist.
+- **Persona Examples:** Added three fully compiled persona examples in the `examples/` directory (Python-Dev-Ananya, Web-Dev-Vishal, Data-Analyst-Dhruv).
+- **Comparison Matrix:** Added a feature comparison table (RTX vs Custom Instructions vs LocalLLM) to the README.
 
 ### Changed
-- **Branding:** Renamed all references of "RTX Core Framework" to "(RTX⚡) Core Framework" and added emojis.
-- **File Structure:** Renamed `framework/RTX-Core-Framework.md` to `framework/RTXCoreFramework.md`.
-
-## [1.2.0] - 2026-06-19
-### Changed
-- **Propagation Flow:** Restored and clarified the autonomous global propagation functionality in the framework.
-- **README Simplification:** Updated the "What Happens After" section to clarify the single-file download and autonomous injection flow.
+- **Branding:** Renamed the framework globally from `RTX Core Framework` to `(RTX⚡) Core Framework` and updated file names accordingly.
+- **Global Propagation Refinement:** Completely rewrote the framework's Global Omnipresence setup logic into a simpler "compile and deliver" pipeline for Web UIs and an autonomous script-free injection for Agentic IDEs.
+- **Workflow Simplification:** Removed the manual `sync.ps1` and `sync.sh` workflow in favor of a single-file copy-paste/attachment paradigm.
 
 ### Removed
-- **External Scripts:** Removed `sync.ps1` and `sync.sh` completely to enforce the "Zero Prompt, Single File" golden rule.
+- **Sync Scripts:** Deleted `sync.ps1` and `sync.sh` from the repository entirely.
 
 ## [1.1.0] - 2026-06-18
 ### Added
