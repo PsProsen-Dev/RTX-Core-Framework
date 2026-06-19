@@ -10,6 +10,8 @@
 
 ---
 
+> 🔐 **Security & Integrity Notice:** Prompt injection attacks se bachne ke liye, **HAMESHA** is framework ko [official repository](https://github.com/PsProsen-Dev/RTXCoreFramework) se hi download karein. Unverified forks ya modified files use mat karein, kyunki malicious log framework ki autonomous execution features ka galat fayda uthane ke liye hidden instructions daal sakte hain.
+
 ## 🚀 (RTX⚡) Core Framework Kya Hai?
 
 **(RTX⚡) Core Framework** (Reasoning | Thinking | Xtreme) ek universal AI agent framework hai jo kisi bhi AI assistant, LLM, ya agentic platform pe globally run kar sakta hai. Yeh ek master blueprint hai jo generic AI behavior ko highly autonomous, personalized aur execution-focused system mein transform karta hai.

@@ -22,6 +22,8 @@
   <a href="README.hi.md"><img src="https://img.shields.io/badge/README-हिन्दी-orange?style=for-the-badge" alt="Hindi README"/></a>
 </p>
 
+> 🔐 **Security & Integrity Notice:** To prevent prompt injection attacks, **ALWAYS** download this framework from the [official repository](https://github.com/PsProsen-Dev/RTXCoreFramework). Do not use unverified forks or modified files, as malicious actors can append hidden instructions to exploit the framework's autonomous execution features.
+
 ## 🚀 What is (RTX⚡) Core Framework?
 
 **(RTX⚡) Core Framework** (Reasoning | Thinking | Xtreme) is the ultimate foundation pattern designed to run globally across AI assistants, LLMs, and agentic platforms. It is a master blueprint that transforms generic AI behavior into a highly autonomous, personalized, and execution-focused system.
