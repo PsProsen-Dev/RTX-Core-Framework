@@ -7,5 +7,13 @@ framework/*
 !CONTRIBUTING.md
 !LICENSE
 !SECURITY.md
-!RTX-Global-Injector.ps1
 !DEMO-What-Agent-Creates.md
+!CHANGELOG.md
+!sync.ps1
+!sync.sh
+!examples/
+examples/*
+!examples/*.md
+!assets/
+assets/*
+!assets/hero-banner.png
