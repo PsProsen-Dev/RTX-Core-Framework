@@ -10,8 +10,6 @@ framework/*
 !SECURITY.md
 !DEMO-What-Agent-Creates.md
 !CHANGELOG.md
-!sync.ps1
-!sync.sh
 !examples/
 examples/*
 !examples/*.md
